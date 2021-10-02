@@ -4,13 +4,13 @@ import { View, Text} from 'react-native';
 import { Container, Title, BannerImage} from './styles';
 
 
-function SliderMovieItem() {
+function SliderMovieItem({data, navigatePage}) {
   return (
-    <Container>
+    <Container onPress={ () => { navigatePage(data) }}>
       <BannerImage
-      source={{ uri: 'http://3.bp.blogspot.com/-9-u-xf9fnvA/T5g_s9BP_VI/AAAAAAAAB9g/BBhIg4ZfHhw/s1600/Vingadores-banner-14mar2012.jpg'}}
+      source={{ uri: `https://image.tmdb.org/t/p/original/${data.poster_path}`}}
       />
-      <Title numberOfLines={1}>Vingadores VingadoresVingadores</Title>
+      <Title numberOfLines={1}>{data.title}</Title>
     </Container>
   )
 }

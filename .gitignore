@@ -1,4 +1,6 @@
 node_modules/
+_cacache/
+_locks
 .expo/
 npm-debug.*
 *.jks

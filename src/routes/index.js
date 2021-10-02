@@ -15,10 +15,10 @@ function Routes(){
       screenOptions={{
         headerShown:false, //remove o header
         drawerStyle:{
-          backgroundColor: '#000',
+          backgroundColor: '#ad0a0f',
           paddingTop: 20,
         },       
-        drawerActiveBackgroundColor: '#e72f49',
+        drawerActiveBackgroundColor: '#000',
         drawerActiveTintColor: '#FFF',
         drawerInactiveBackgroundColor: '#FFF'
       }}
