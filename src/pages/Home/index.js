@@ -118,7 +118,7 @@ function Home() {
           <BannerTitle>{bannerMovie.title}</BannerTitle>
         </BannerButton>
 
-        <Title>Em Cartazxx</Title>
+        <Title>Em Cartaz</Title>
         <SliderMovie
           horizontal={true}
           showsHorizontalScrollIndicator={false}

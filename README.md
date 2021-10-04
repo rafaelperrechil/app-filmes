@@ -1,0 +1,1 @@
+![alt text](https://github.com/rafaelperrechil/app-filmes/blob/master/assets/app-filmes-telas.jpg?raw=true)
