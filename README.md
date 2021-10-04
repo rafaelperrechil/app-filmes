@@ -12,3 +12,9 @@
 <br>
 
 ![alt text](https://github.com/rafaelperrechil/app-filmes/blob/master/assets/app-filmes-telas.jpg?raw=true)
+
+## Instalação
+- git clone https://github.com/rafaelperrechil/app-filmes.git
+- npm install --global expo-cli
+- expo install
+- expo start
