@@ -9,7 +9,8 @@ import {
   ContentStars,
   Rate,
   ListGenres,
-  Description
+  Description,
+  LoadingContent
  } from './style';
 
 import api, { key } from '../../services/api';
@@ -21,14 +22,15 @@ import { useNavigation, useRoute} from '@react-navigation/native';
 import { useEffect, useState } from 'react/cjs/react.development';
 
 import Stars from 'react-native-stars';
-import { ScrollView} from 'react-native';
+import { ScrollView, ActivityIndicator} from 'react-native';
 
 function index() {
   const navigation = useNavigation();
   const route = useRoute();
 
   const [movie, setMovie] = useState({});
-
+  const [loading, setLoading] = useState(true);
+  
   useEffect(() =>{
     let isActive = true;
 
@@ -46,6 +48,7 @@ function index() {
 
       if(isActive){
         setMovie(response.data);
+        setLoading(false)
       }
 
     }
@@ -59,6 +62,14 @@ function index() {
     }
 
   }, [])
+
+  if(loading){
+    return(
+        <LoadingContent>
+          <ActivityIndicator size="large" color="#FFF"/>
+        </LoadingContent>
+    )
+  }
 
   return (
     <Container>

@@ -77,3 +77,9 @@ export const Description = styled.Text`
   padding: 0 14px 30px 15px;
   line-height: 20px;
 `;
+
+export const LoadingContent = styled.View`
+  background-color: #ad0a0f;
+  flex: 1;
+  justify-content: center;
+`;
